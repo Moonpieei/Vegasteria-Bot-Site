@@ -1,0 +1,219 @@
+html, body {
+    font-family: 'Nutino', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    padding: 10px;
+    background: none;
+  }
+
+  .grid-item {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: bold;
+    grid-column: span 4; 
+  }
+
+  #item-1,#item-2,#item-3{
+      height: 980px;
+      padding: 20px;
+  }
+
+
+  .buttons-container{
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 25px;
+
+}
+  .buttons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   border: none;
+    border-radius: 12px;
+    background: #6d18fc;
+    text-decoration: none;
+    cursor:pointer;
+   box-shadow: 0px 4px 20px rgba(130, 104, 255, 0.4);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    padding:15px 30px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .buttons:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 6px 25px rgba(122, 96, 255, 0.6);
+  }
+
+  .footer {
+    text-align: center;
+    line-height: 50px;
+    height: 125px; 
+    grid-column: span 4; 
+  }
+ 
+
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding:0;
+  }
+  .footer ul li{
+    list-style: none;
+  }
+  
+  .footer li a {
+    text-decoration: none;
+    color: #dad4f0fa;
+    font-size:18px;
+    position:relative;
+    text-shadow: 0px 0px 5px rgba(201, 198, 207, 0.4);
+     transition: text-shadow 0.3s ease, transform 0.3s ease;
+  }
+ 
+  .footer li a i{
+    margin-right: 5px;
+  }
+
+.footer li a:hover {
+text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+transform: translateY(-2px);
+}
+
+
+.img-container{
+display: flex;
+justify-content: space-between;
+gap: 70px;
+}
+.img-div{
+display: flex;
+box-shadow: rgba(201, 201, 219, 0.329) 0px 7px 20px 0px;
+justify-content: center;
+min-width: 250px;
+min-height: 245px;
+align-items: center;
+}
+
+.img-div img{
+max-width: 100%;
+height:auto;
+object-fit:cover;
+}
+
+@media (max-width: 768px) {
+.img-container{
+  flex-direction: column;
+  align-items: center;
+}
+.img-div{
+  width:100%;
+  min-width: unset;
+}
+}
+  .gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #0a1c3d, #260d41, #3f3381, #17033a, #1a2355);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    z-index: -1; 
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .container{
+    z-index: 2;
+  }
+
+  h1{
+    font-size: 2.2em;
+    color: #fff;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+  }
+
+#item-1 p{
+    font-size: 1.0em;
+    color: #fff;
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  }
+
+  #item-2 p{
+    margin-bottom: 100px;
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+
+  }
+
+  #item-3 p{
+    margin-bottom: 100px;
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  }
+
+.item-buttons-container{
+display: flex;
+justify-content: center;
+margin-top: 25px;
+
+}
+
+.item-buttons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    background: #6d18fc;
+    text-decoration: none;
+    cursor:pointer;
+    box-shadow: 0px 4px 20px rgba(130, 104, 255, 0.4);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    padding:15px 30px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-buttons:hover {
+transform: translateY(2px) scale(1.05);
+box-shadow: 0px 6px 25px rgba(122, 96, 255, 0.6);
+}
